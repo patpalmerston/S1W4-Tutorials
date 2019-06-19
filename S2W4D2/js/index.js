@@ -13,8 +13,8 @@ function randomColors() {
 const colorText = document.querySelectorAll('p');
 console.log(colorText)
 colorText.forEach(x => {
-  x.addEventListener('mouseover', (event, i) => {
-    event[i].target.style.color = randomColors();
+  x.addEventListener('mouseover', (event) => {
+    event.target.style.color = randomColors();
     })
 })
 
@@ -60,4 +60,6 @@ function logSelection(event) {
 
 const input = document.querySelector('input');
 input.addEventListener('select', logSelection);
+
+const imgchanger = document.querySelector('')
 
