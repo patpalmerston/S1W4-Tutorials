@@ -44,6 +44,7 @@ class TabLink {
     
     // Call the select method on the item associated with this link
     this.tabItem.select();
+    TweenMax.to(`.tabs-item[data-tab="${this.data}"]`, 3, {rotation:360, scale:1});
 
   }
 }
@@ -83,6 +84,14 @@ class TabItem {
 */
 
 links = document.querySelectorAll(".tabs-link").forEach(tabLink => new TabLink(tabLink));
+
+//green sock
+
+TweenMax.from('.dropdown-button', 3, {x:100, y:100, scale:2, skewX:45, rotation:180});
+
+TweenMax.from(".header", 1, {x:300, ease:Bounce.easeOut});
+
+
 
 
 // stretch solution code
